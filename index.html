@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transible - all clouds at your fingertips!</title>
+
+    <!-- Primary Meta Tags -->
+<meta name="title" content="Transible - all clouds at your fingertips!">
+<meta name="description" content="Transible - all clouds at your fingertips! Team">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://github.com/sshnaidm/transible">
+<meta property="og:title" content="Transible - all clouds at your fingertips!">
+<meta property="og:description" content="Transible - all clouds at your fingertips!">
+<!-- <meta property="og:image" content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg"> -->
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://github.com/sshnaidm/transible">
+<meta property="twitter:title" content="Transible - all clouds at your fingertips!">
+<meta property="twitter:description" content="Transible - all clouds at your fingertips!">
+<!-- <meta property="twitter:image" content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg"> -->
+
+    <!--====== Favicon Icon ======-->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.svg"
+      type="image/svg"
+    />
+
+    <!-- ===== All CSS files ===== -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/lineicons.css" />
+    <link rel="stylesheet" href="assets/css/ud-styles.css" />
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            #terms {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                padding-top: 100px;
+                left: 0;
+                top: 0;
+                width: 60%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0,0,0,0.4);
+            }
+            #privacy {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                padding-top: 100px;
+                left: 0;
+                top: 0;
+                width: 60%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0,0,0,0.4);
+            }
+            #termsContent {
+                background-color: #fefefe;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+            }
+            #privContent {
+                background-color: #fefefe;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+            }
+            .close {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+            .closep {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+            .close:hover, .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .closep:hover, .closep:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        </style>
+
+  </head>
+  <body>
+    <!-- ====== Header Start ====== -->
+    <header class="ud-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo/transible-logo-3.png" alt="Logo" />
+              </a>
+              <button class="navbar-toggler">
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+              </button>
+
+              <div class="navbar-collapse">
+                <ul id="nav" class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#features">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#demo">Demo</a>
+                  </li>
+
+                  <!-- <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#pricing">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#team">Team</a>
+                  </li> -->
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#contact">Contact</a>
+                  </li>
+                  <!-- <li class="nav-item nav-item-has-children">
+                    <a href="javascript:void(0)"> Pages </a>
+                    <ul class="ud-submenu">
+                      <li class="ud-submenu-item">
+                        <a href="about.html" class="ud-submenu-link">
+                          About Page
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="pricing.html" class="ud-submenu-link">
+                          Pricing Page
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="contact.html" class="ud-submenu-link">
+                          Contact Page
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="blog.html" class="ud-submenu-link">
+                          Blog Grid Page
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="blog-details.html" class="ud-submenu-link">
+                          Blog Details Page
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="login.html" class="ud-submenu-link">
+                          Sign In Page
+                        </a>
+                      </li>
+                       <li class="ud-submenu-item">
+                        <a href="404.html" class="ud-submenu-link">404 Page</a>
+                      </li>
+                    </ul>
+                  </li> -->
+                </ul>
+              </div>
+
+              <div class="navbar-btn d-none d-sm-inline-block">
+                <!-- <a href="login.html" class="ud-main-btn ud-login-btn">
+                  Sign In
+                </a>
+                <a class="ud-main-btn ud-white-btn" href="javascript:void(0)">
+                  Sign Up
+                </a> -->
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ====== Header End ====== -->
+
+    <!-- ====== Hero Start ====== -->
+    <section class="ud-hero" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
+              <h1 class="ud-hero-title">
+                Transible
+              </h1>
+              <p class="ud-hero-desc">
+                Transible is a toolset that transforms your existing cloud infrastructure into an infrastructure as code.
+              </p>
+              <ul class="ud-hero-buttons">
+                <li>
+                  <a href="https://github.com/sshnaidm/transible/archive/refs/heads/master.zip" rel="nofollow noopener" target="_blank" class="ud-main-btn ud-white-btn">
+                    Download Now
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/sshnaidm/transible" rel="nofollow noopener" target="_blank" class="ud-main-btn ud-link-btn">
+                    Learn More <i class="lni lni-arrow-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="ud-hero-brands-wrapper wow fadeInUp"
+              data-wow-delay=".3s"
+            >
+              <!-- <img src="assets/images/hero/brand.svg" alt="brand" /> -->
+            </div>
+            <div class="ud-hero-image wow fadeInUp" data-wow-delay=".25s">
+              <img src="assets/images/hero/all-clouds.png" alt="hero-image" />
+              <img
+                src="assets/images/hero/dotted-shape.svg"
+                alt="shape"
+                class="shape shape-1"
+              />
+              <img
+                src="assets/images/hero/dotted-shape.svg"
+                alt="shape"
+                class="shape shape-2"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Hero End ====== -->
+
+    <!-- ====== Features Start ====== -->
+    <section id="features" class="ud-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-section-title">
+              <span>Features</span>
+              <h2>Main Features of Transible</h2>
+              <p>
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".1s">
+              <div class="ud-feature-icon">
+                <i class="lni lni-gift"></i>
+              </div>
+              <div class="ud-feature-content">
+                <h3 class="ud-feature-title">Free and Open-Source</h3>
+                <p class="ud-feature-desc">
+                  Transible is free and open-source software. It is distributed under the terms of the Apache License, Version 2.0.
+                </p>
+                <!-- <a href="javascript:void(0)" class="ud-feature-link">
+                  Learn More
+                </a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".15s">
+              <div class="ud-feature-icon">
+                <i class="lni lni-move"></i>
+              </div>
+              <div class="ud-feature-content">
+                <h3 class="ud-feature-title">Multicloud Support</h3>
+                <p class="ud-feature-desc">
+                  Transible supports all major cloud providers: Azure, AWS, Openstack and more to come.
+                </p>
+                <!-- <a href="javascript:void(0)" class="ud-feature-link">
+                  Learn More
+                </a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".2s">
+              <div class="ud-feature-icon">
+                <i class="lni lni-layout"></i>
+              </div>
+              <div class="ud-feature-content">
+                <h3 class="ud-feature-title">Simpplicity</h3>
+                <p class="ud-feature-desc">
+                  Transible is simple to use. It is based on Ansible, so you can use all its features.
+                </p>
+                <!-- <a href="javascript:void(0)" class="ud-feature-link">
+                  Learn More
+                </a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".25s">
+              <div class="ud-feature-icon">
+                <i class="lni lni-layers"></i>
+              </div>
+              <div class="ud-feature-content">
+                <h3 class="ud-feature-title">Synergy</h3>
+                <p class="ud-feature-desc">
+                  Transible adheres to the best practice of infrastructure as code and cloud infrastructure in mind.
+                </p>
+                <!-- <a href="javascript:void(0)" class="ud-feature-link">
+                  Learn More
+                </a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Features End ====== -->
+
+    <!-- ====== About Start ====== -->
+    <section id="demo" class="ud-about">
+      <div class="container">
+        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
+          <div class="ud-about-content-wrapper">
+            <div class="ud-about-content">
+              <span class="tag">Demo</span>
+              <h2>AWS demo</h2>
+              <p>
+                Transible inspects AWS infrastructure and generates Ansible code to reproduce it.
+              </p>
+              <!-- <a href="javascript:void(0)" class="ud-main-btn">Learn More</a> -->
+            </div>
+          </div>
+          <div class="ud-about-image">
+            <img src="assets/images/transible-demo.gif" alt="demo-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== About End ====== -->
+
+    <!-- ====== Pricing Start ====== -->
+    <!-- <section id="pricing" class="ud-pricing">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-section-title mx-auto text-center">
+              <span>Pricing</span>
+              <h2>Our Pricing Plans</h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration in some form.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-0 align-items-center justify-content-center">
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <div
+              class="ud-single-pricing first-item wow fadeInUp"
+              data-wow-delay=".15s"
+            >
+              <div class="ud-pricing-header">
+                <h3>STARTING FROM</h3>
+                <h4>$ 19.99/mo</h4>
+              </div>
+              <div class="ud-pricing-body">
+                <ul>
+                  <li>5 User</li>
+                  <li>All UI components</li>
+                  <li>Lifetime access</li>
+                  <li>Free updates</li>
+                  <li>Use on 1 (one) project</li>
+                  <li>4 Months support</li>
+                </ul>
+              </div>
+              <div class="ud-pricing-footer">
+                <a href="javascript:void(0)" class="ud-main-btn ud-border-btn">
+                  Purchase Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <div
+              class="ud-single-pricing active wow fadeInUp"
+              data-wow-delay=".1s"
+            >
+              <span class="ud-popular-tag">POPULAR</span>
+              <div class="ud-pricing-header">
+                <h3>STARTING FROM</h3>
+                <h4>$ 30.99/mo</h4>
+              </div>
+              <div class="ud-pricing-body">
+                <ul>
+                  <li>5 User</li>
+                  <li>All UI components</li>
+                  <li>Lifetime access</li>
+                  <li>Free updates</li>
+                  <li>Use on 1 (one) project</li>
+                  <li>4 Months support</li>
+                </ul>
+              </div>
+              <div class="ud-pricing-footer">
+                <a href="javascript:void(0)" class="ud-main-btn ud-white-btn">
+                  Purchase Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <div
+              class="ud-single-pricing last-item wow fadeInUp"
+              data-wow-delay=".15s"
+            >
+              <div class="ud-pricing-header">
+                <h3>STARTING FROM</h3>
+                <h4>$ 70.99/mo</h4>
+              </div>
+              <div class="ud-pricing-body">
+                <ul>
+                  <li>5 User</li>
+                  <li>All UI components</li>
+                  <li>Lifetime access</li>
+                  <li>Free updates</li>
+                  <li>Use on 1 (one) project</li>
+                  <li>4 Months support</li>
+                </ul>
+              </div>
+              <div class="ud-pricing-footer">
+                <a href="javascript:void(0)" class="ud-main-btn ud-border-btn">
+                  Purchase Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- ====== Pricing End ====== -->
+
+    <!-- ====== FAQ Start ====== -->
+    <!-- <section id="faq" class="ud-faq">
+      <div class="shape">
+        <img src="assets/images/faq/shape.svg" alt="shape" />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-section-title text-center mx-auto">
+              <span>FAQ</span>
+              <h2>Any Questions? Answered</h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration in some form.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".1s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>How to use UIdeck?</span>
+                </button>
+                <div id="collapseOne" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".15s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>How to download icons from Lineicons?</span>
+                </button>
+                <div id="collapseTwo" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>Is GrayGrids part of UIdeck?</span>
+                </button>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".1s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>Can I use this template for commercial project?</span>
+                </button>
+                <div id="collapseFour" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".15s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>Do you have plan releasing Play Pro?</span>
+                </button>
+                <div id="collapseFive" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>Where and how to host this template?</span>
+                </button>
+                <div id="collapseSix" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- ====== FAQ End ====== -->
+
+    <!-- ====== Testimonials Start ====== -->
+    <!-- <section id="testimonials" class="ud-testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-section-title mx-auto text-center">
+              <span>Testimonials</span>
+              <h2>What our Customers Says</h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration in some form.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="ud-single-testimonial wow fadeInUp"
+              data-wow-delay=".1s"
+            >
+              <div class="ud-testimonial-ratings">
+                <i class="lni lni-star-filled"></i>
+                <i class="lni lni-star-filled"></i>
+                <i class="lni lni-star-filled"></i>
+                <i class="lni lni-star-filled"></i>
+                <i class="lni lni-star-filled"></i>
+              </div>
+              <div class="ud-testimonial-content">
+                <p>
+                  “Our members are so impressed. It's intuitive. It's clean.
+                  It's distraction free. If you're building a community.
+                </p>
+              </div>
+              <div class="ud-testimonial-info">
+                <div class="ud-testimonial-image">
+                  <img
+                    src="assets/images/testimonials/author-01.png"
+                    alt="author"
+                  />
+                </div>
+                <div class="ud-testimonial-meta">
+                  <h4>Sabo Masties</h4>
+                  <p>Founder @UIdeck</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="ud-single-testimonial wow fadeInUp"
+              data-wow-delay=".15s"
+            >
+              <div class="ud-testimonial-ratings">
+                <i class="lni lni-star-filled"></i>
+                <i class="lni lni-star-filled"></i>
+                <i class="lni lni-star-filled"></i>
+                <i class="lni lni-star-filled"></i>
+                <i class="lni lni-star-filled"></i>
+              </div>
+              <div class="ud-testimonial-content">
+                <p>
+                  “Our members are so impressed. It's intuitive. It's clean.
+                  It's distraction free. If you're building a community.
+                </p>
+              </div>
+              <div class="ud-testimonial-info">
+                <div class="ud-testimonial-image">
+                  <img
+                    src="assets/images/testimonials/author-02.png"
+                    alt="author"
+                  />
+                </div>
+                <div class="ud-testimonial-meta">
+                  <h4>Margin Gesmu</h4>
+                  <p>Founder @Lineicons</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="ud-single-testimonial wow fadeInUp"
+              data-wow-delay=".2s"
+            >
+              <div class="ud-testimonial-ratings">
+                <i class="lni lni-star-filled"></i>
+                <i class="lni lni-star-filled"></i>
+                <i class="lni lni-star-filled"></i>
+                <i class="lni lni-star-filled"></i>
+                <i class="lni lni-star-filled"></i>
+              </div>
+              <div class="ud-testimonial-content">
+                <p>
+                  “Our members are so impressed. It's intuitive. It's clean.
+                  It's distraction free. If you're building a community.
+                </p>
+              </div>
+              <div class="ud-testimonial-info">
+                <div class="ud-testimonial-image">
+                  <img
+                    src="assets/images/testimonials/author-03.png"
+                    alt="author"
+                  />
+                </div>
+                <div class="ud-testimonial-meta">
+                  <h4>William Smith</h4>
+                  <p>Founder @GrayGrids</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-brands wow fadeInUp" data-wow-delay=".2s">
+              <div class="ud-title">
+                <h6>Trusted and Used by</h6>
+              </div>
+              <div class="ud-brands-logo">
+                <div class="ud-single-logo">
+                  <img src="assets/images/brands/ayroui.svg" alt="ayroui" />
+                </div>
+                <div class="ud-single-logo">
+                  <img src="assets/images/brands/uideck.svg" alt="uideck" />
+                </div>
+                <div class="ud-single-logo">
+                  <img
+                    src="assets/images/brands/graygrids.svg"
+                    alt="graygrids"
+                  />
+                </div>
+                <div class="ud-single-logo">
+                  <img
+                    src="assets/images/brands/lineicons.svg"
+                    alt="lineicons"
+                  />
+                </div>
+                <div class="ud-single-logo">
+                  <img
+                    src="assets/images/brands/ecommerce-html.svg"
+                    alt="ecommerce-html"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- ====== Testimonials End ====== -->
+
+    <!-- ====== Team Start ====== -->
+    <!-- <section id="team" class="ud-team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-section-title mx-auto text-center">
+              <span>Our Team</span>
+              <h2>Meet The Team</h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration in some form.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="ud-single-team wow fadeInUp" data-wow-delay=".1s">
+              <div class="ud-team-image-wrapper">
+                <div class="ud-team-image">
+                  <img src="assets/images/team/team-01.png" alt="team" />
+                </div>
+
+                <img
+                  src="assets/images/team/dotted-shape.svg"
+                  alt="shape"
+                  class="shape shape-1"
+                />
+                <img
+                  src="assets/images/team/shape-2.svg"
+                  alt="shape"
+                  class="shape shape-2"
+                />
+              </div>
+              <div class="ud-team-info">
+                <h5>Adveen Desuza</h5>
+                <h6>UI Designer</h6>
+              </div>
+              <ul class="ud-team-socials">
+                <li>
+                  <a href="https://twitter.com/MusharofChy">
+                    <i class="lni lni-facebook-filled"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/MusharofChy">
+                    <i class="lni lni-twitter-filled"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/MusharofChy">
+                    <i class="lni lni-instagram-filled"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="ud-single-team wow fadeInUp" data-wow-delay=".15s">
+              <div class="ud-team-image-wrapper">
+                <div class="ud-team-image">
+                  <img src="assets/images/team/team-02.png" alt="team" />
+                </div>
+
+                <img
+                  src="assets/images/team/dotted-shape.svg"
+                  alt="shape"
+                  class="shape shape-1"
+                />
+                <img
+                  src="assets/images/team/shape-2.svg"
+                  alt="shape"
+                  class="shape shape-2"
+                />
+              </div>
+              <div class="ud-team-info">
+                <h5>Jezmin uniya</h5>
+                <h6>Product Designer</h6>
+              </div>
+              <ul class="ud-team-socials">
+                <li>
+                  <a href="https://twitter.com/MusharofChy">
+                    <i class="lni lni-facebook-filled"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/MusharofChy">
+                    <i class="lni lni-twitter-filled"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/MusharofChy">
+                    <i class="lni lni-instagram-filled"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="ud-single-team wow fadeInUp" data-wow-delay=".2s">
+              <div class="ud-team-image-wrapper">
+                <div class="ud-team-image">
+                  <img src="assets/images/team/team-03.png" alt="team" />
+                </div>
+
+                <img
+                  src="assets/images/team/dotted-shape.svg"
+                  alt="shape"
+                  class="shape shape-1"
+                />
+                <img
+                  src="assets/images/team/shape-2.svg"
+                  alt="shape"
+                  class="shape shape-2"
+                />
+              </div>
+              <div class="ud-team-info">
+                <h5>Andrieo Gloree</h5>
+                <h6>App Developer</h6>
+              </div>
+              <ul class="ud-team-socials">
+                <li>
+                  <a href="https://twitter.com/MusharofChy">
+                    <i class="lni lni-facebook-filled"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/MusharofChy">
+                    <i class="lni lni-twitter-filled"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/MusharofChy">
+                    <i class="lni lni-instagram-filled"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="ud-single-team wow fadeInUp" data-wow-delay=".25s">
+              <div class="ud-team-image-wrapper">
+                <div class="ud-team-image">
+                  <img src="assets/images/team/team-04.png" alt="team" />
+                </div>
+
+                <img
+                  src="assets/images/team/dotted-shape.svg"
+                  alt="shape"
+                  class="shape shape-1"
+                />
+                <img
+                  src="assets/images/team/shape-2.svg"
+                  alt="shape"
+                  class="shape shape-2"
+                />
+              </div>
+              <div class="ud-team-info">
+                <h5>Jackie Sanders</h5>
+                <h6>Content Writer</h6>
+              </div>
+              <ul class="ud-team-socials">
+                <li>
+                  <a href="https://twitter.com/MusharofChy">
+                    <i class="lni lni-facebook-filled"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/MusharofChy">
+                    <i class="lni lni-twitter-filled"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/MusharofChy">
+                    <i class="lni lni-instagram-filled"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- ====== Team End ====== -->
+
+    <!-- ====== Contact Start ====== -->
+    <section id="contact" class="ud-contact">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-8 col-lg-7">
+            <div class="ud-contact-content-wrapper">
+              <div class="ud-contact-title">
+                <span>CONTACT US</span>
+                <h2>
+                  Let`s talk about <br />
+                  Love to hear from you!
+                </h2>
+              </div>
+              <!-- <div class="ud-contact-info-wrapper">
+                <div class="ud-single-info">
+                  <div class="ud-info-icon">
+                    <i class="lni lni-map-marker"></i>
+                  </div>
+                  <div class="ud-info-meta">
+                    <h5>Our Location</h5>
+                    <p>401 Broadway, 24th Floor, Orchard Cloud View, London</p>
+                  </div>
+                </div> -->
+                <div class="ud-single-info">
+                  <div class="ud-info-icon">
+                    <i class="lni lni-envelope"></i>
+                  </div>
+                  <div class="ud-info-meta">
+                    <h5>How Can We Help?</h5>
+                    <p>info@transible.io</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div
+              class="ud-contact-form-wrapper wow fadeInUp"
+              data-wow-delay=".2s"
+            >
+              <h3 class="ud-contact-form-title">Send us a Message</h3>
+              <form class="ud-contact-form">
+                <div class="ud-form-group">
+                    <label for="email">Email*</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="example@yourmail.com"
+                    />
+                </div>
+                <div class="ud-form-group">
+                  <label for="subject">Subject*</label>
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    placeholder="Feedback about Transible"
+                  />
+                </div>
+
+                <!-- <div class="ud-form-group">
+                  <label for="phone">Phone*</label>
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="+885 1254 5211 552"
+                  />
+                </div> -->
+                <div class="ud-form-group">
+                  <label for="message">Message*</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="1"
+                    placeholder="type your message here"
+                  ></textarea>
+                </div>
+                <div class="ud-form-group mb-0">
+                  <!-- <button type="submit" class="ud-main-btn">
+                    Send Message
+                  </button> -->
+                  <a id="send-email-link" href="#" class="ud-main-btn">
+                    Send Email
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Contact End ====== -->
+
+    <!-- ====== Footer Start ====== -->
+    <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
+      <div class="shape shape-1">
+        <img src="assets/images/footer/shape-1.svg" alt="shape" />
+      </div>
+      <div class="shape shape-2">
+        <img src="assets/images/footer/shape-2.svg" alt="shape" />
+      </div>
+      <div class="shape shape-3">
+        <img src="assets/images/footer/shape-3.svg" alt="shape" />
+      </div>
+      <div class="ud-footer-widgets">
+        <!-- <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="ud-widget">
+                <a href="index.html" class="ud-footer-logo">
+                  <img src="assets/images/logo/logo.svg" alt="logo" />
+                </a>
+                <p class="ud-widget-desc">
+                  We create digital experiences for brands and companies by
+                  using technology.
+                </p>
+                <ul class="ud-widget-socials">
+                  <li>
+                    <a href="https://twitter.com/MusharofChy">
+                      <i class="lni lni-facebook-filled"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/MusharofChy">
+                      <i class="lni lni-twitter-filled"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/MusharofChy">
+                      <i class="lni lni-instagram-filled"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/MusharofChy">
+                      <i class="lni lni-linkedin-original"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+              <div class="ud-widget">
+                <h5 class="ud-widget-title">About Us</h5>
+                <ul class="ud-widget-links">
+                  <li>
+                    <a href="javascript:void(0)">Home</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Features</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">About</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Testimonial</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+              <div class="ud-widget">
+                <h5 class="ud-widget-title">Features</h5>
+                <ul class="ud-widget-links">
+                  <li>
+                    <a href="javascript:void(0)">How it works</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Privacy policy</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Terms of service</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Refund policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+              <div class="ud-widget">
+                <h5 class="ud-widget-title">Our Products</h5>
+                <ul class="ud-widget-links">
+                  <li>
+                    <a
+                      href="https://lineicons.com/"
+                      rel="nofollow noopner"
+                      target="_blank"
+                      >Lineicons
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://ecommercehtml.com/"
+                      rel="nofollow noopner"
+                      target="_blank"
+                      >Ecommerce HTML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://ayroui.com/"
+                      rel="nofollow noopner"
+                      target="_blank"
+                      >Ayro UI</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://graygrids.com/"
+                      rel="nofollow noopner"
+                      target="_blank"
+                      >Plain Admin</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-8 col-sm-10">
+              <div class="ud-widget">
+                <h5 class="ud-widget-title">Partners</h5>
+                <ul class="ud-widget-brands">
+                  <li>
+                    <a
+                      href="https://ayroui.com/"
+                      rel="nofollow noopner"
+                      target="_blank"
+                    >
+                      <img
+                        src="assets/images/footer/brands/ayroui.svg"
+                        alt="ayroui"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://ecommercehtml.com/"
+                      rel="nofollow noopner"
+                      target="_blank"
+                    >
+                      <img
+                        src="assets/images/footer/brands/ecommerce-html.svg"
+                        alt="ecommerce-html"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://graygrids.com/"
+                      rel="nofollow noopner"
+                      target="_blank"
+                    >
+                      <img
+                        src="assets/images/footer/brands/graygrids.svg"
+                        alt="graygrids"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://lineicons.com/"
+                      rel="nofollow noopner"
+                      target="_blank"
+                    >
+                      <img
+                        src="assets/images/footer/brands/lineicons.svg"
+                        alt="lineicons"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://uideck.com/"
+                      rel="nofollow noopner"
+                      target="_blank"
+                    >
+                      <img
+                        src="assets/images/footer/brands/uideck.svg"
+                        alt="uideck"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://tailwindtemplates.co/"
+                      rel="nofollow noopner"
+                      target="_blank"
+                    >
+                      <img
+                        src="assets/images/footer/brands/tailwindtemplates.svg"
+                        alt="tailwindtemplates"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div class="ud-footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <ul class="ud-footer-bottom-left">
+                <li>
+                  <a href="javascript:void(0)" id="priv-btn">Privacy policy</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Support policy</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" id="terms-btn">Terms of service</a>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="col-md-4">
+              <p class="ud-footer-bottom-right">
+                Designed and Developed by
+                <a href="https://uideck.com" rel="nofollow">Transible</a>
+              </p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ====== Footer End ====== -->
+
+    <!-- ====== Back To Top Start ====== -->
+    <a href="javascript:void(0)" class="back-to-top">
+      <i class="lni lni-chevron-up"> </i>
+    </a>
+    <!-- ====== Back To Top End ====== -->
+
+    <div id="terms">
+        <div id="termsContent">
+          <span class="close">&times;</span>
+          <h2>Terms of Use</h2>
+          <p></p>
+            <ol>
+            <li><strong>Acceptance of Terms:</strong> By using this tool ("Transible"), you agree to these Terms of Use. If you do not agree to these terms, do not use Transible.</li>
+            <li><strong>Description of Service:</strong> Transible is a software application that connects to your cloud account, retrieves information about your resources, and generates code of insfrastructure as Ansible playbooks.</li>
+            <li><strong>User Responsibilities:</strong> You are solely responsible for the security of your cloud account. You must safeguard the credentials that you use to access your cloud account and must supervise and control use of Transible in accordance with these terms.</li>
+            <li><strong>Data Privacy and Security:</strong> Transible only accesses your cloud account data as necessary to provide its services in read only mode. We do not store your cloud account credentials. We respect your privacy and take measures to protect your data.</li>
+            <li><strong>Limitations on Use:</strong> You agree not to use Transible for any illegal or harmful purpose. You may not resell Transible or its services.</li>
+            <li><strong>Intellectual Property:</strong> Transible and its original content, features, and functionality are and will remain the exclusive property of Transible's developers.</li>
+            <li><strong>Disclaimers and Limitation of Liability:</strong> Transible is provided "as is", without warranty of any kind. In no event will we be liable for any damage or loss resulting from the use of Transible.</li>
+            <li><strong>Third-Party Services:</strong> Transible interacts with third-party services, such as AWS. We are not responsible for any issues related to these services, including changes in their APIs, downtime, or data breaches.</li>
+            <li><strong>Termination:</strong> We reserve the right to terminate or suspend access to Transible immediately, without prior notice or liability, for any reason whatsoever.</li>
+            <li><strong>Changes to Terms:</strong> We reserve the right to modify or replace these Terms at any time. What constitutes a material change will be determined at our sole discretion.</li>
+            </ol>
+        </div>
+      </div>
+
+      <div id="privacy">
+        <div id="privContent">
+          <span class="closep">&times;</span>
+        <h2>Privacy Policy</h2>
+        <p></p>
+          <ol>
+            <li><strong>Introduction</strong>: This Privacy Policy explains what information Transible collects and how it's used. Transible is committed to respecting and protecting your privacy.</li>
+            <li><strong>Information Collection</strong>: Transible does not collect any personal data. The only data it uses are the credentials you provide to connect to your cloud account. These credentials are not stored or used for any other purposes.</li>
+            <li><strong>Information Use</strong>: Your cloud account credentials are used solely for the purpose of connecting to your cloud account and retrieving information about your resources.</li>
+            <li><strong>Information Sharing and Disclosure</strong>: Since we do not collect or store personal data, we do not share or disclose any personal data with third parties.</li>
+            <li><strong>Data Security</strong>: While Transible does not store your credentials or any personal data, we take precautions to ensure that the process of using your credentials to connect to your cloud account is secure.</li>
+            <li><strong>Third-Party Services</strong>: Transible interacts with third-party cloud services. Any information accessed from these services is subject to their respective privacy policies.</li>
+            <li><strong>Data Retention</strong>: Transible does not retain any personal data or cloud account credentials.</li>
+            <li><strong>Children's Privacy</strong>: Transible is not intended for use by children under the age of 13. We do not knowingly collect personal data from children under 13.</li>
+            <li><strong>Updates to this Privacy Policy</strong>: We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</li>
+            <li><strong>Contact Us</strong>: If you have any questions about this Privacy Policy, please contact us.</li>
+          </ol>
+        </div>
+      </div>
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('terms');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("terms-btn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // Get the modal
+        var modalp = document.getElementById('privacy');
+
+        // Get the button that opens the modal
+        var btnp = document.getElementById("priv-btn");
+
+        // Get the <span> element that closes the modal
+        var spanp = document.getElementsByClassName("closep")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+        event.stopPropagation();
+    }
+    // When the user clicks the button, open the modal
+    btnp.onclick = function() {
+        modalp.style.display = "block";
+        event.stopPropagation();
+    }
+
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+        event.stopPropagation();
+    };
+    // When the user clicks on <span> (x), close the modal
+    spanp.onclick = function() {
+        modalp.style.display = "none";
+        event.stopPropagation();
+    };
+
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal && window.getSelection().toString().length === 0) {
+        modal.style.display = "none";
+        event.stopPropagation();
+    };
+    if (event.target == modalp && window.getSelection().toString().length === 0) {
+        modalp.style.display = "none";
+        event.stopPropagation();
+    }
+    if (event.target != modalp && event.target != modal && window.getSelection().toString().length === 0) {
+        modal.style.display = "none";
+        modalp.style.display = "none";
+        event.stopPropagation();
+    };
+    }
+
+
+    </script>
+    <!-- ====== All Javascript Files ====== -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        const emailInput = document.querySelector('input[name="email"]');
+        const subjectInput = document.getElementById('subject');
+        const messageInput = document.getElementById('message');
+        const sendEmailLink = document.getElementById('send-email-link');
+
+        sendEmailLink.addEventListener('click', function() {
+          const email = emailInput.value;
+          const subject = encodeURIComponent(subjectInput.value);
+          const message = encodeURIComponent(messageInput.value);
+          const mailtoUrl = `mailto:info@transible.io?from=${email}&subject=${subject}&body=${message}`;
+          sendEmailLink.setAttribute('href', mailtoUrl);
+        });
+      </script>
+    <script>
+      // ==== for menu scroll
+      const pageLink = document.querySelectorAll(".ud-menu-scroll");
+
+      pageLink.forEach((elem) => {
+        elem.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector(elem.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            offsetTop: 1 - 60,
+          });
+        });
+      });
+
+      // section menu active
+      function onScroll(event) {
+        const sections = document.querySelectorAll(".ud-menu-scroll");
+        const scrollPos =
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          document.body.scrollTop;
+
+        for (let i = 0; i < sections.length; i++) {
+          const currLink = sections[i];
+          const val = currLink.getAttribute("href");
+          const refElement = document.querySelector(val);
+          const scrollTopMinus = scrollPos + 73;
+          if (
+            refElement.offsetTop <= scrollTopMinus &&
+            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+          ) {
+            document
+              .querySelector(".ud-menu-scroll")
+              .classList.remove("active");
+            currLink.classList.add("active");
+          } else {
+            currLink.classList.remove("active");
+          }
+        }
+      }
+
+      window.document.addEventListener("scroll", onScroll);
+    </script>
+  </body>
+</html>
